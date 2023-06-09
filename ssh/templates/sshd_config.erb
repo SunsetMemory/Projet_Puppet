@@ -1,0 +1,12 @@
+# SSH configuration file
+
+# Protocol version
+Protocol 2
+
+# Connexion port
+Port <% if physical? -%>23<% else -%>24<% end -%>
+
+#Other configurations options
+PermitRootLogin no
+PasswordAuthentication yes
+PrintMotd no
