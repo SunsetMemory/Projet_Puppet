@@ -15,4 +15,9 @@ class apache::config {
     content => template('apache/ports.conf.erb'),
     notify  => Service['apache2'],
   }
+  file { '/var/www/html/info.php':
+  ensure => file,
+  content => template('apache/info.php.erb'),
+  notify  => Service['apache2'],
+  }
 }
