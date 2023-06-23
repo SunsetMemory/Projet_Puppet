@@ -1,0 +1,7 @@
+<?php
+echo "<h1>System Information</h1>";
+echo "<p>Uptime: " . shell_exec("uptime") . "</p>";
+echo "<p>Time: " . date('Y-m-d H:i:s') . "</p>";
+echo "<p>Operating System: " . php_uname('s') . "</p>";
+echo "<p>OS Version: " . php_uname('r') . "</p>";
+?>
